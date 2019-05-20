@@ -1,11 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	i := 10
+	start := time.Now()
+	i := 40
 	res := fibonacci(i)
-	fmt.Printf("fibonacci for %d is %d\n", i, res)
+	cost := time.Now().Sub(start)
+	fmt.Printf("fibonacci for %d is %d, cost time is %s\n", i, res, cost)
 }
 
 func fibonacci(n int) (res int) {
