@@ -12,5 +12,4 @@ func main() {
 		fmt.Printf("i=%d, numbers.len=%d, cap=%d, val=%v\n",
 			i, len(numbers), cap(numbers), numbers)
 	}
-
 }
