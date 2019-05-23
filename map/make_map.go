@@ -12,5 +12,4 @@ func main() {
 	for key, val := range cityMap {
 		fmt.Printf("key=%s, val=%s\n", key, val)
 	}
-
 }
