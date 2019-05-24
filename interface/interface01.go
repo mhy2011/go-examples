@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 const PI float32 = 3.14
 
@@ -10,7 +13,7 @@ func main() {
 
 	shapers := [] Shaper{square, circle}
 	for _, shaper := range shapers {
-		fmt.Println("area is :", shaper.Area())
+		fmt.Printf("type is %s, area is %f\n", reflect.TypeOf(shaper).Name(), shaper.Area())
 	}
 
 }
