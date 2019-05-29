@@ -1,0 +1,7 @@
+package error
+
+func main() {
+
+}
+
+
