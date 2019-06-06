@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	//返回t类型的指针
 	t := new(T01)
-	fmt.Printf("t = %v\n", t)
+	fmt.Printf("t = %v, *t=%v\n", t, *t)
 
 	var t2 T01
 	fmt.Printf("t2 = %v\n", t2)
